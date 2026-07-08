@@ -19,8 +19,20 @@
   
   
   
-  var mySqrt = function(x) {
-    let result=Math.floor(Math.sqrt(x))
-    return result;
-};
-console.log(mySqrt(8))
+//   var mySqrt = function(x) {
+//     let result=Math.floor(Math.sqrt(x))
+//     return result;
+// };
+// console.log(mySqrt(8))
+
+var singleNumber = function(nums) {
+    let str=nums.join("")
+    let int=Number(str)
+    let resint=int+1;
+    let res=resint.split("");
+    let result=res.map((int)=>Number(int))
+    
+      return result
+  
+}
+singleNumber([2,2,1])
