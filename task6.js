@@ -74,3 +74,39 @@
 
 
 // -------------------------------------------------
+
+// 557. Reverse Words in a String III
+// Solved
+// Easy
+// Topics
+// premium lock icon
+// Companies
+// Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
+// /**
+//  * @param {string} s
+//  * @return {string}
+//  */
+// var reverseWords = function(s) {
+//     let arr= s.split(" ")
+//     let revarr=arr.map(word=>word.split("").reverse().join(""))
+//     return revarr.join(" ")
+// };
+// ________________________________________________________________
+// 520. Detect Capital
+
+// /**
+//  * @param {string} word
+//  * @return {boolean}
+//  */
+// var detectCapitalUse = function(word) {
+//     if(word === word.toUpperCase() || word===word.toLowerCase() || word[0]===word[0].toUpperCase() && word.slice(1)===word.slice(1).toLowerCase()){
+//         return true;
+//     } 
+//     else{
+//         return false
+//     }
+    
+
+  
+// };
