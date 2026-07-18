@@ -130,8 +130,26 @@
 // ________________________________________________________________________
 // 1929. Concatenation of Array
 
-var getConcatenation = function(nums) {
-    nums2=[...nums]
-    ans=nums.concat(nums2)
-    return ans;
-};
+// var getConcatenation = function(nums) {
+//     nums2=[...nums]
+//     ans=nums.concat(nums2)
+//     return ans;
+// };
+
+// _________________________________
+// 3099. Harshad Number
+// var sumOfTheDigitsOfHarshadNumber = function(x) {
+//     let arr=String(x).split("")
+//    let newArr=arr.map(n=>Number(n))
+//     let sum =0
+//     for(let n of newArr){
+//         sum+=n
+//     }
+//     if(x%sum===0){
+//         return sum
+//     }
+//     else{
+//         return -1
+//     }
+    
+// };
