@@ -127,3 +127,11 @@
 //     return original
     
 // };
+// ________________________________________________________________________
+// 1929. Concatenation of Array
+
+var getConcatenation = function(nums) {
+    nums2=[...nums]
+    ans=nums.concat(nums2)
+    return ans;
+};
