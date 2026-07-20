@@ -136,7 +136,7 @@
 //     return ans;
 // };
 
-// _________________________________
+// ___________________________________________________________________
 // 3099. Harshad Number
 // var sumOfTheDigitsOfHarshadNumber = function(x) {
 //     let arr=String(x).split("")
@@ -153,3 +153,23 @@
 //     }
     
 // };
+// ______________________________________________
+// 2180. Count Integers With Even Digit Sum
+
+// var countEven = function(num) {
+//     let count=0;
+//    for (let i = 1; i <= num; i++) {
+
+//     let arr = String(i).split("");
+
+//     let newArr = arr.map(n => Number(n));
+
+//     let sum = newArr.reduce((sum, n) => sum + n, 0);
+
+//     if (sum % 2 === 0) {
+//         count++;
+//     }
+
+//     }
+//     return count
+// }
