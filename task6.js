@@ -173,3 +173,9 @@
 //     }
 //     return count
 // }
+// ________________________________________
+// 977. Squares of a Sorted Array
+var sortedSquares = function(nums) {
+    let res = nums.map(n=>n**2).sort((a,b)=>a-b)
+    return res
+};
