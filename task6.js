@@ -175,7 +175,25 @@
 // }
 // ________________________________________
 // 977. Squares of a Sorted Array
-var sortedSquares = function(nums) {
-    let res = nums.map(n=>n**2).sort((a,b)=>a-b)
-    return res
-};
+// var sortedSquares = function(nums) {
+//     let res = nums.map(n=>n**2).sort((a,b)=>a-b)
+//     return res
+// };
+// // 136. Single Number
+// ______________________________________
+
+// var singleNumber = function(nums) {
+//     for(i=0;i<nums.length;i++){
+//         count =0;
+//         for(j=0; j<nums.length;j++){
+//             if(nums[i]===nums[j]){
+//                 count++
+//             }
+//         }
+//         if(count===1){
+//             return nums[i]
+//         }
+//         }
+//         return
+//     }
+    
