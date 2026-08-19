@@ -338,3 +338,170 @@ _____________________________________________
 
 // ____________________________________
 
+// 13. Roman to Integer
+
+// var romanToInt = function(s) {
+//       const values = {
+//         I: 1,
+//         V: 5,
+//         X: 10,
+//         L: 50,
+//         C: 100,
+//         D: 500,
+//         M: 1000
+//     };
+
+//     let result = 0;
+
+//     for (let i = 0; i < s.length; i++) {
+//         let current = values[s[i]];
+//         let next = values[s[i + 1]];
+
+//         // If current value is smaller than next, subtract
+//         if (current < next) {
+//             result -= current;
+//         } else {
+//             result += current;
+//         }
+//     }
+
+//     return result;
+// }
+
+// __________________________________________
+
+// 14. Longest Common Prefix
+
+// var longestCommonPrefix = function(strs) {
+//     if (strs.length === 0) return "";
+
+//     let prefix = strs[0];
+
+//     for (let i = 1; i < strs.length; i++) {
+//         while (strs[i].indexOf(prefix) !== 0) {
+//             prefix = prefix.substring(0, prefix.length - 1);
+
+//             if (prefix === "") {
+//                 return "";
+//             }
+//         }
+//     }
+
+//     return prefix;
+// };
+
+// ________________________________________
+
+
+
+// 2469. Convert the Temperature
+
+// var convertTemperature = function(celsius) {
+//     return [celsius + 273.15, (celsius *1.80)+32]
+// };
+
+// _____________________________________________
+
+
+
+// 283. Move Zeroes
+
+// var moveZeroes = function(nums) {
+//     let zero= nums.filter(num=>num===0);
+// let nonzero = nums.filter(num=>num!==0)
+ 
+//  let res = nonzero.concat(zero)
+
+//   for (let i = 0; i < nums.length; i++) {
+//         nums[i] = res[i];
+//     }
+
+//  return res
+// };
+
+// _____________________________________________
+
+
+// 2665. Counter II
+
+// var createCounter = function(init) {
+//     let n = init
+//   return {
+//    increment : function (){
+//        return n +=1
+//    },
+//    reset : function(){
+//     return n = init 
+//    },
+//    decrement : function (){
+//     return n-=1
+//    }
+//   }
+//   ____________________________________
+
+//   290. Word Pattern
+
+//   var wordPattern = function(pattern, s) {
+//     const words = s.split(" ");
+
+//   if (pattern.length !== words.length) {
+//     return false;
+//   }
+
+//   const patternToWord = new Map();
+//   const wordToPattern = new Map();
+
+//   for (let i = 0; i < pattern.length; i++) {
+//     const letter = pattern[i];
+//     const word = words[i];
+
+//     if (patternToWord.has(letter)) {
+//       if (patternToWord.get(letter) !== word) {
+//         return false;
+//       }
+//     }
+
+//     if (wordToPattern.has(word)) {
+//       if (wordToPattern.get(word) !== letter) {
+//         return false;
+//       }
+//     }
+
+//     patternToWord.set(letter, word);
+//     wordToPattern.set(word, letter);
+//   }
+
+//   return true; 
+// };
+
+// _____________________________________________
+
+
+// 27. Remove Element
+
+// var removeElement = function(nums, val) {
+//     let k = 0;
+
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] !== val) {
+//       nums[k] = nums[i];
+//       k++;
+//     }
+//   }
+
+//   return k;
+
+// };
+
+// ______________________________________________
+
+// 3794. Reverse String Prefix
+
+// var reversePrefix = function(s, k) {
+//     let first = s.slice(0,k).split("").reverse().join("")
+//     let last = s.slice(k)
+//     let res = first + last
+//     return res
+// };
+
+// ________________________________________________
