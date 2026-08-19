@@ -505,3 +505,44 @@ _____________________________________________
 // };
 
 // ________________________________________________
+
+// 2634. Filter Elements from Array
+
+// var filter = function(arr, fn) {
+//     let newarr = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (fn(arr[i], i)) {
+//             newarr.push(arr[i]);
+//         }
+//     }
+
+//     return newarr;
+// };
+// __________________________________________
+
+// 2413. Smallest Even Multiple
+
+// var smallestEvenMultiple = function(n) {
+//     if(n%2===0){
+//         return n 
+//     }
+//     if(n%2!==0){
+//         return n*2
+//     }
+// };
+
+// _________________________________________
+
+// 162. Find Peak Element
+// var findPeakElement = function(nums) {
+//     let peak = nums[0]
+//     for(let i=0; i<nums.length; i++){
+//         if(peak<nums[i]){
+//             peak = nums[i]
+//         }
+      
+//     }
+//     return nums.indexOf(peak)
+
+// };
