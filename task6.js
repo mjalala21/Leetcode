@@ -228,3 +228,113 @@
 
 //     return -1;
 // };
+// var getCommon = function(nums1, nums2) {
+//     for(let i=0; i<nums1.length; i++){
+//         for(j=0; j<=nums2.length;j++){
+//             if(nums1[i]===nums2[j]){
+//                 return nums1[i]
+//             }
+//         }
+       
+//     }
+//     return -1
+// };
+
+// ______________________________________________________
+
+// 151. Reverse Words in a String
+
+// var reverseWords = function(s) {
+//     let arr = s.replace(/\s+/g, " ").trim().split(" ").reverse().join(" ")
+   
+//         return arr
+
+// };
+
+// _________________________________________________
+
+
+// 344. Reverse String
+
+// var reverseString = function(s) {
+//     let res=s.reverse()
+//     return res
+// };
+
+// _______________________________________________________
+
+// 1528. Shuffle String
+
+// var restoreString = function(s, indices) {
+//    let result = []
+//    for(let i=0; i<s.length; i++){
+//     result[indices[i]]= s[i]
+//    }
+//    return result.join("")
+// };
+
+_____________________________________________
+
+// 541. Reverse String II
+
+// var reverseStr = function(s, k) {
+
+//     let arr = s.split("");
+
+//     for (let i = 0; i < arr.length; i += 2 * k) {
+
+//         let left = i;
+//         let right = Math.min(i + k - 1, arr.length - 1);
+
+//         while (left < right) {
+//             [arr[left], arr[right]] = [arr[right], arr[left]];
+//             left++;
+//             right--;
+//         }
+//     }
+
+//     return arr.join("");
+// };
+
+// _________________________________________________
+
+// 367. Valid Perfect Square
+
+// var isPerfectSquare = function(num) {
+//     if(Number.isInteger(Math.sqrt(num))){
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// };
+
+// ___________________________________________________
+
+
+
+// 1672. Richest Customer Wealth
+
+// var maximumWealth = function(accounts) {
+//      let wealthArr = []
+//   for(let i = 0; i<accounts.length; i++){
+//       let sum = 0
+     
+//       for(let j =0; j<accounts[i].length; j++){
+//          sum+=accounts[i][j]
+//       }
+//       wealthArr.push(sum)
+//   }
+//   let greatest = wealthArr[0]
+//   for(let i = 1; i<wealthArr.length ; i++){
+//      if(wealthArr[i]>greatest){
+//         greatest = wealthArr[i]
+//      }
+//   }
+
+//   return greatest
+   
+// };
+
+// ____________________________________
+
